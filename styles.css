@@ -85,4 +85,13 @@ input, textarea {
     margin-top: 20px;
     text-align: left;
 }
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
 
