@@ -10,10 +10,20 @@ body {
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;  /* Changed to flex-start to allow scrolling */
-    min-height: 100vh;        /* Ensure body height is at least 100% viewport height */
-    padding: 20px;            /* Added padding to allow space for the content */
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
     box-sizing: border-box;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #ffffff;
+    color: #121212;
 }
 
 .container {
@@ -24,7 +34,16 @@ body {
     width: 100%;
     max-width: 800px;
     text-align: center;
-    margin-bottom: 20px;      /* Added margin-bottom for spacing */
+    margin-bottom: 20px;
+}
+
+.container.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+.container.hidden {
+    display: none;
 }
 
 h1 {
@@ -84,18 +103,5 @@ input, textarea {
 .comments-section {
     margin-top: 20px;
     text-align: left;
-}
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-button.dark-mode {
-    background-color: #ffffff;
-    color: #121212;
-}
-.container.dark-mode{
-    background-color: #121212;
-    color: #ffffff;
 }
 
