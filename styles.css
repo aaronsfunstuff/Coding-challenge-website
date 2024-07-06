@@ -1,11 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    align-items: flex-start;  /* Changed to flex-start to allow scrolling */
+    min-height: 100vh;        /* Ensure body height is at least 100% viewport height */
+    padding: 20px;            /* Added padding to allow space for the content */
+    box-sizing: border-box;
 }
 
 .container {
@@ -13,9 +21,10 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 100%;
     max-width: 800px;
     text-align: center;
+    margin-bottom: 20px;      /* Added margin-bottom for spacing */
 }
 
 h1 {
@@ -71,3 +80,9 @@ input, textarea {
     margin-top: 10px;
     padding: 10px;
 }
+
+.comments-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
