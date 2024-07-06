@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Coding Challenges</h1>
+        <ul id="challengesList"></ul>
+        <div class="challenge-details">
+            <h2 id="challengeTitle"></h2>
+            <p id="challengeDescription"></p>
+            <textarea id="solution" placeholder="Write your solution here..."></textarea>
+            <button id="submitSolutionBtn">Submit Solution</button>
+        </div>
+        <h2>Add New Challenge</h2>
+        <input type="text" id="newChallengeTitle" placeholder="Title">
+        <textarea id="newChallengeDescription" placeholder="Description"></textarea>
+        <button id="addChallengeBtn">Add Challenge</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
