@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="toggleBtn">Toggle Dark Mode</button>
     <div class="container">
         <h1>Coding Challenges</h1>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
         <ul id="challengesList"></ul>
         <div class="challenge-details">
             <h2 id="challengeTitle"></h2>
@@ -21,6 +21,12 @@
         <input type="text" id="newChallengeTitle" placeholder="Title">
         <textarea id="newChallengeDescription" placeholder="Description"></textarea>
         <button id="addChallengeBtn">Add Challenge</button>
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul id="commentsList"></ul>
+            <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+            <button id="addCommentBtn">Add Comment</button>
+        </div>
     </div>
     <script src="scripts.js"></script>
 </body>
