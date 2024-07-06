@@ -94,4 +94,8 @@ button.dark-mode {
     background-color: #ffffff;
     color: #121212;
 }
+.container.dark-mode{
+    background-color: #121212;
+    color: #ffffff;
+}
 
