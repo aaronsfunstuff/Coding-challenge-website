@@ -81,14 +81,18 @@ document.addEventListener('DOMContentLoaded', function () {
     displayChallenges();
     displayComments();
 
-    // Toggle Dark Mode and Container Visibiliy
-    const toggleBtn = document.getElementById('toggleBtn');
-    const container = document.querySelector('.container');
-
-    toggleBtn.addEventListener('click', () => {
+    // Toggle Dark Mode
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
         document.querySelectorAll('button').forEach(button => button.classList.toggle('dark-mode'));
-        container.classList.toggle('dark-mode');
+        document.querySelector('.container').classList.toggle('dark-mode');
+    });
+
+    // Toggle Container Visibility
+    const toggleContainerBtn = document.getElementById('toggleContainerBtn');
+    const container = document.querySelector('.container');
+
+    toggleContainerBtn.addEventListener('click', () => {
         container.classList.toggle('hidden');
     });
 });
