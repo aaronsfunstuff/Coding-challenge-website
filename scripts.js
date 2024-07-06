@@ -57,3 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     displayChallenges();
 });
+document.getElementById('darkModeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    document.querySelectorAll('button').forEach(button => button.classList.toggle('dark-mode'));
+});
+
