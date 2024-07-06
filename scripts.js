@@ -96,3 +96,16 @@ document.addEventListener('DOMContentLoaded', function () {
         container.classList.toggle('hidden');
     });
 });
+document.getElementById('searchBar').addEventListener('input', function() {
+    const searchQuery = this.value.toLowerCase();
+    const challengesList = document.getElementById('challengesList');
+    challengesList.innerHTML = '';
+    challenges.forEach(challenge => {
+        if (challenge.title.toLowerCase().includes(searchQuery)) {
+            const li = document.createElement('li');
+            li.innerText = challenge.title;
+            li.addEventListener('click', () => displayChallenge(challenge));
+            challengesList.appendChild(li);
+        }
+    });
+});
