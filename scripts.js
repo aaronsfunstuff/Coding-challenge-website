@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     displayChallenges();
     displayComments();
 
-    // Toggle Dark Mode and Container Visibility
+    // Toggle Dark Mode and Container Visibiliy
     const toggleBtn = document.getElementById('toggleBtn');
     const container = document.querySelector('.container');
 
